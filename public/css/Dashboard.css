@@ -1,0 +1,177 @@
+
+.title{
+  font-size:340%;
+  text-shadow:0px 0px 10px rgba(255,255,255,0.5);
+}
+.btn_year{
+  padding:1% 2%;
+  font-size:130%;
+  margin:1%;
+  border-radius:2px;
+  border:none;
+  background-color:rgba(127,219,255,1);
+  color:white;
+  transition-duration: 0.2s;
+  box-shadow: -8px 8px 0px rgba(0,0,0,0.4);
+}
+.btn_year:hover{
+  transform: translateX(-8px) translateY(8px);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+.btn_year2{
+  padding:1% 2%;
+  font-size:130%;
+  margin:1%;
+  border-radius:2px;
+  border:none;
+  background-color:rgba(127,219,255,1);
+  color:white;
+  transition-duration: 0.2s;
+  transform: translateX(-8px) translateY(8px);
+  box-shadow: 0px 0px 20px rgba(127,219,255,1);
+
+}
+.functions{
+  width:300px;
+  height:300px;
+  margin:3%;
+  border-radius:16px;
+  border:none;
+  transition-duration: 0.2s;
+  font-size:200%;
+}
+.functions i{
+  margin-top:2;
+  font-size:400%;
+}
+.functions:hover{
+  transform:scale(1.1);
+  box-shadow: 0px 0px 20px rgba(127,219,255,1);
+  animation:rotate 0.5s forwards;
+}
+@keyframes rotate {
+  0%{transform:rotate(0deg);}
+  25%{transform:rotate(1deg);}
+  50%{transform:rotate(-1deg);}
+  75%{transform:rotate(1deg);}
+  100%{transform:rotate(0deg);}
+}
+
+
+/*Before Choosing Major*/
+
+.buttons{
+  margin-top:5rem;
+}
+.faculty_btn{
+  position:relative;
+  width:230px;
+  height:230px;
+  border-radius:2000px;
+  box-shadow:-5px 0px 5px rgba(0,0,0,0.4);
+  background-color:white;
+  color:black;
+  font-size:150%;
+  border:none;
+  margin:1%;
+  transition-duration: 0.2s;
+}
+.faculty_btn:hover{
+  transform: scale(1.2);
+  background-color:#4ef84e;
+  color:white;
+  box-shadow:0px 0px 20px #4ef84e;
+}
+.eng_btn{
+  position:relative;
+  width:230px;
+  height:230px;
+  border-radius:2000px;
+  box-shadow:-5px 0px 5px rgba(0,0,0,0.4);
+  background-color:white;
+  color:black;
+  font-size:150%;
+  border:none;
+  margin:1%;
+  transition-duration: 0.2s;
+}
+.eng_btn:hover{
+  transform: scale(1.2);
+  background-color:#7FDBFF;
+  color:white;
+  box-shadow:0px 0px 20px #7FDBFF;
+}
+.major_btn{
+  position:relative;
+  width:230px;
+  height:230px;
+  border-radius:2000px;
+  box-shadow:-5px 0px 5px rgba(0,0,0,0.4);
+  background-color:white;
+  color:black;
+  font-size:150%;
+  border:none;
+  margin:1%;
+  transition-duration: 0.2s;
+}
+.major_btn:hover{
+  transform: scale(1.2);
+  background-color:#FF4136;
+  color:white;
+  box-shadow:0px 0px 20px #FF4136;
+}
+.chosen_faculty{
+  width:230px;
+  height:230px;
+  border-radius:2000px;
+  box-shadow:-5px 0px 5px rgba(0,0,0,0.4);
+  position:fixed;
+  left:0%;
+  top:20%;
+  border-none;
+  transform:scale(0.3);
+  background-color:#4ef84e;
+  color:white;
+  box-shadow:0px 0px 20px #4ef84e;
+  transform:scale(0);
+  font-size:0px;
+  border:none;
+}
+@keyframes appear {
+  from{
+    transform:scale(0);
+    font-size:0%;
+  }
+  to{
+    transform:scale(0.4);
+    font-size:250%;
+  }
+}
+
+.buttons i{
+  padding-top:3%;
+  font-size:300%;
+}
+.disappear{
+  z-index:1;
+  animation: shrink_btns 0.5s forwards;
+}
+@keyframes shrink_btns {
+  0%{transform:scale(1)}
+  20%{transform:scale(1.1)}
+  99%{transform:scale(0)}
+  100%{transform:scale(0);display:none;}
+}
+@keyframes show_btns {
+  0%{transform:scale(0);display:none;}
+  20%{transform:scale(0)}
+  80%{transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+@keyframes go_left{
+  0%{transform:scale(1)}
+  10%{transform:scale(1.1)}
+  30%{transform:scale(0)}
+  30.01%{position:fixed;}
+  100%{position:fixed;left:0.5%;top:10%;transform:scale(0.4)}
+}

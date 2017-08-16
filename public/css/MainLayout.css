@@ -1,11 +1,15 @@
 body{
- background: #282537;
- background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
- background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
- background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
- background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
- min-height:100%;
- min-width:100%;
- background-repeat: no-repeat;
- position:fixed;
+	 background: #282537;
+   background-image: -webkit-radial-gradient(top, circle cover, #5BAACF 0%, #00303f 80%);
+   background-image: -moz-radial-gradient(top, circle cover, #5BAACF 0%, #00303f 80%);
+   background-image: -o-radial-gradient(top, circle cover, #5BAACF 0%, #00303f 80%);
+   background-image: radial-gradient(top, circle cover, #5BAACF 0%, #00303f 80%);
+   color:white;
+   height:100%;
+   background-attachment:fixed;
+   font-family:Raleway;
+}
+a,a:hover,a:focus,a:visited{
+	color:white;
+	text-decoration: none;
 }

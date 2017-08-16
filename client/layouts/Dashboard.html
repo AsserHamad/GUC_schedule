@@ -1,0 +1,41 @@
+<template name="Dashboard">
+  <link rel="stylesheet" href="/css/Dashboard.css">
+  <script type="text/javascript" src="/js/js_Dashboard.js"></script>
+  {{#if userMajor}}
+  <div class="container-fluid">
+    <p class="title text-center"><b>{{userMajor}}</b></p>
+    <div class="text-center">
+      {{#each years}}
+        <button type="button" class="{{#if sameYear}}btn_year2{{else}}btn_year{{/if}}" name="button"><b>Year {{this}}</b></button>
+      {{/each}}
+    </div>
+    <div class="text-center">
+        <a href="/tutorials"><button class="functions" type="button" style="background-color:#4ef84e;" name="button">Show Tutorials<br><i class="fa fa-calendar" aria-hidden="true"></i></button></a>
+        <a href="/requests"><button class="functions" type="button" style="background-color:#7FDBFF;" name="button">Requests<br><i class="fa fa-handshake-o " aria-hidden="true"></i></button></a>
+        <a href="/subjects"><button class="functions" type="button" style="background-color:#FF4136" name="button">Browse Subjects<br><i class="fa fa-address-book-o" aria-hidden="true"></i></button></a>
+    </div>
+  </div>
+  {{else}}
+    <div class="container-fluid">
+      <button type="button" id="choice_1" class="chosen_faculty" name="button"></button>
+      <p class="text-center" style="margin-top:10rem;font-size:300%;text-shadow:0px 0px 10px white;"><b>Please choose your <span id="title">Faculty</span>, {{currentUser.profile.f_name}}</b></p>
+      <div class="buttons col-xs-12 first">
+        <span class="col-xs-1"></span>
+        <span class="col-xs-2"><button id="faculty_eng" class="faculty_btn" type="button" name="button">Engineering<br><i class="fa fa-wrench" aria-hidden="true"></i></button></span>
+        <span class="col-xs-2"><button id="faculty_pharmacy" class="faculty_btn" type="button" name="button">Pharmacy<br><i class="fa fa-flask" aria-hidden="true"></i></button></span>
+        <span class="col-xs-2"><button id="faculty_aa" class="faculty_btn" type="button" name="button">Applied Arts<br><i class="fa fa-paint-brush" aria-hidden="true"></i></button></span>
+        <span class="col-xs-2"><button id="faculty_mngt" class="faculty_btn" type="button" name="button">Management<br><i class="fa fa-briefcase" aria-hidden="true"></i></button></span>
+        <span class="col-xs-2"><button id="faculty_law" class="faculty_btn" type="button" name="button">Law<br><i class="fa fa-book" aria-hidden="true"></i></button></span>
+        <span class="col-xs-1"></span>
+      </div>
+      <div class="buttons col-xs-12 second text-center">
+
+      </div>
+      <div class="buttons col-xs-12 third text-center">
+
+      </div>
+
+
+    </div>
+  {{/if}}
+</template>

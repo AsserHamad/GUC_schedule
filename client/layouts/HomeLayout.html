@@ -1,3 +1,36 @@
 <template name="HomeLayout">
-  <p>Hey there</p>
+  <div class="container-fluid">
+    <div class="text-center row">
+      <img src="/img/logo.png" alt="GUC logo" class="logo center-block">
+    </div>
+    <div class="row" style="margin-top:5rem">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-4 text-center" style="border-right: 1px solid white;">
+        <p class="titles"><b>Login</b></p>
+        <form class="form_login" style="border-bottom:1px solid rgba(255,255,255,0.5);">
+          <span class="row"><input class="sexy_form" type="text" name="username" placeholder="Username" value="" required></span>
+          <span class="row"><input class="sexy_form" type="password" name="password" placeholder="Password" value="" required></span>
+          <span class="row"><button class="sexy_button" type="submit" name="button">Login</button></span>
+        </form>
+        <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+      </div>
+      <div class="col-xs-4 text-center" style="border-left: 1px solid white;">
+        <p class="titles"><b>Register</b></p>
+        <form class="form_register">
+          <span class="row"><input class="sexy_form" type="text" name="username" placeholder="Username" value="" required></span>
+          <span class="row"><input class="sexy_form" type="email" name="email" placeholder="Email" value="" required></span>
+          <span class="row">
+            <span class="col-xs-6"><input style="width:99%;" class="sexy_form" type="password" name="password" placeholder="Password" value="" required></span>
+            <span class="col-xs-6"><input style="width:99%;" class="sexy_form" type="password" name="confirm_password" placeholder="Confirm Password" value="" required></span>
+          </span>
+          <span class="row">
+            <span class="col-xs-6"><input style="width:99%;" class="sexy_form" type="text" name="f_name" placeholder="First Name" value="" required></span>
+            <span class="col-xs-6"><input style="width:99%;" class="sexy_form" type="text" name="l_name" placeholder="Last Name" value="" required></span>
+          </span>
+          <span class="row"><button class="sexy_button" type="submit" name="button">Register</button></span>
+        </form>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+  </div>
 </template>
