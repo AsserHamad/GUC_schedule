@@ -1,3 +1,29 @@
 <template name="TutorialsLayout">
-  <p>This is where we'd put our tutorials, if we HAD ANY!!</p>
+  <link rel="stylesheet" href="/css/TutorialsLayout.css">
+  {{#if currentMajor}}
+  <span id="current_tut" display:none>{{currentTut}}</span>
+  <button type="button" id="_major" class="center-block text-center major_btn" name="button">{{currentMajor}}</button>
+    <script type="text/javascript" src="/js/js_TutorialsLayout.js"></script>
+  {{/if}}
+  <div class="container-fluid">
+    <div class="col-xs-2" id="butts">
+
+    </div>
+    <div class="col-xs-2"></div>
+      {{#if currentTut}}
+      <div id="schedule" class="col-xs-8">
+
+      </div>
+      {{else}}
+      <div class="col-xs-8 placeholder_schedule text-center">
+        <p><b>Please choose a tutorial to view</b></p>
+      </div>
+      {{/if}}
+      <div class="squad col-xs-2">
+        <p class="text-center" style="font-size:200%;"><b>The Squad</b></p>
+        <div class="fam">
+          <p class="text-center" style="font-size:140%;"><b>Nobody's here :(</b></p>
+        </div>
+      </div>
+  </div>
 </template>

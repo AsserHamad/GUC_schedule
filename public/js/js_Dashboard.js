@@ -3,11 +3,11 @@ var eng = [{
     faculty: "MET",
     icon: '<i class="fa fa-desktop" aria-hidden="true"></i>',
     majors: [{
-      major:"Computer Science",
+      major:"CSEN",
       icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
     },
     {
-      major:"Digital Media",
+      major:"DMET",
       icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
     }]
   },
@@ -27,7 +27,7 @@ var eng = [{
       major:"Production",
       icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
     },{
-      major:"Material Sciences",
+      major:"Materials",
       icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
     }]
   },
@@ -41,7 +41,7 @@ var eng = [{
       major:"Communication",
       icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
     },{
-      major:"Electric Engineering",
+      major:"Electric",
       icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
     }]
 }];
@@ -64,7 +64,7 @@ var pharmacy = {
     icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
   },
   {
-    major: "Pharmacy and Biotechnology",
+    major: "Biotechnology",
     icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
   }
 ]};
@@ -74,10 +74,10 @@ var mngt = {
     major:"Management",
     icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
   },{
-    major:"Business Informatics",
+    major:"BI",
     icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
   },{
-    major:"Technological Management",
+    major:"Techn_MNGT",
     icon: '<i class="fa fa-desktop" aria-hidden="true"></i>'
 }]};
 var law = {faculty: "law",
@@ -143,9 +143,8 @@ function chosen_faculty(name, facs){
       third.html(
         third.html()+'<button id="'+facs.majors[i].major+'" class="major_btn">'+facs.majors[i].major+'<br>'+facs.majors[i].icon+'</button>'
       )
-      console.log("The css right now [before] is "+$("#"+facs.majors[i].major).css('animation'));
       $("#"+facs.majors[i].major).css("animation", "show_btns 1s forwards");
-      console.log($("#"+facs.majors[i].major).css());
+      console.log($("#"+facs.majors[i].major));
       $("#"+facs.majors[i].major).attr("major", facs.majors[i].major);
     }
     $(".major_btn").on('click',function(){

@@ -1,0 +1,68 @@
+.major_btn{
+  background-color: #0E0B16;
+  color:#E7DFDD;
+  border:none;
+  border-radius:2000px;
+  font-size:200%;
+  width:20%;
+  height:20%;
+}
+.tut_btn{
+  background-color: #008F95;
+  color:#E7DFDD;
+  border:none;
+  border-radius:2000px;
+  font-size:200%;
+  width:70%;
+  height:10%;
+  transition-duration:0.2s;
+}
+.tut_btn:hover{
+  background-color: #66B9BF;
+}
+.tut_btn:focus{
+  background-color: #E7DFDD;
+  color:#0E0B16;
+}
+.my_tut{
+  background-color: #E7DFDD;
+  color:#0E0B16;
+  border:none;
+  border-radius:2000px;
+  font-size:200%;
+  width:70%;
+  height:10%;
+  transition-duration:0.2s;
+  box-shadow:0px 0px 15px #E7DFDD;
+}
+.placeholder_schedule{
+  font-size:400%;
+  text-shadow: 0px 0px 20px white;
+  padding-top:13%;
+}
+.squad{
+  border-radius:5px;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  padding-top:3%;
+  padding-bottom:3%;
+}
+.fam{
+  padding:2%;
+  background-color: rgba(0,0,0,0.2);
+  border-radius:3px;
+}
+#butts{
+  position:absolute;
+  overflow-y:auto;
+  height:80%;
+}
+#butts::-webkit-scrollbar{
+  background-color:rgba(0,0,0,0.2);
+  border-radius:10px;
+  width:10px;
+}
+#butts::-webkit-scrollbar-thumb{
+  border-radius:10px;
+  background-color:rgba(0,0,0,0.2);
+}
