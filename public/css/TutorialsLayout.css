@@ -52,6 +52,13 @@
   background-color: rgba(0,0,0,0.2);
   border-radius:3px;
 }
+.schedule{
+  margin-top:4%;
+  border-radius:300px;
+}
+.cells{
+  border:2px solid white;
+}
 #butts{
   position:absolute;
   overflow-y:auto;

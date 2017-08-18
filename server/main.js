@@ -21,11 +21,11 @@ Meteor.startup(() => {
 
   Meteor.methods({
     addMajor(major){
+      let data = Meteor.user().profile;
+      data.major = major;
       Meteor.users.update(Meteor.user(),{
         $set:{
-          profile:{
-            major: major
-          }
+          profile:data
         }
       })
     },

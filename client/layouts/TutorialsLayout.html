@@ -10,15 +10,50 @@
 
     </div>
     <div class="col-xs-2"></div>
-      {{#if currentTut}}
-      <div id="schedule" class="col-xs-8">
+    {{#if userAdmin}}
+      <div class="col-xs-8 text-center center-block">
+        <div class="schedule col-xs-12 center-block text-center">
+          <div class="cells col-xs-2">Weekday</div>
+          <div class="cells col-xs-2">First Slot</div>
+          <div class="cells col-xs-2">Second Slot</div>
+          <div class="cells col-xs-2">Third Slot</div>
+          <div class="cells col-xs-2">Fourth Slot</div>
+          <div class="cells col-xs-2">Fifth Slot</div>
+
+          <div class="cells col-xs-2">Saturday</div>
+          <div class="cells col-xs-10">
+            <button type="button" class="free_btn" name="button">Free Day!</button>
+            <button type="button" class="normal_btn" name="button">Normal Day</button>
+          </div>
+
+          <div class="cells col-xs-2">Sunday</div>
+          <div class="cells col-xs-10">First Slot</div>
+
+          <div class="cells col-xs-2">Monday</div>
+          <div class="cells col-xs-10">First Slot</div>
+
+          <div class="cells col-xs-2">Tuesday</div>
+          <div class="cells col-xs-10">First Slot</div>
+
+          <div class="cells col-xs-2">Wednesday</div>
+          <div class="cells col-xs-10">First Slot</div>
+
+          <div class="cells col-xs-2">Thursday</div>
+          <div class="cells col-xs-10">First Slot</div>
+        </div>
 
       </div>
-      {{else}}
-      <div class="col-xs-8 placeholder_schedule text-center">
-        <p><b>Please choose a tutorial to view</b></p>
-      </div>
-      {{/if}}
+    {{else}}
+        {{#if currentTut}}
+        <div id="schedule" class="col-xs-8">
+
+        </div>
+        {{else}}
+        <div class="col-xs-8 placeholder_schedule text-center">
+          <p><b>Please choose a tutorial to view</b></p>
+        </div>
+        {{/if}}
+    {{/if}}
       <div class="squad col-xs-2">
         <p class="text-center" style="font-size:200%;"><b>The Squad</b></p>
         <div class="fam">
