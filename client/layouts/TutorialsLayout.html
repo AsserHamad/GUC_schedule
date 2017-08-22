@@ -1,64 +1,49 @@
 <template name="TutorialsLayout">
   <link rel="stylesheet" href="/css/TutorialsLayout.css">
   {{#if currentMajor}}
-  <span id="current_tut" display:none>{{currentTut}}</span>
   <button type="button" id="_major" class="center-block text-center major_btn" name="button">{{currentMajor}}</button>
-    <script type="text/javascript" src="/js/js_TutorialsLayout.js"></script>
   {{/if}}
   <div class="container-fluid">
     <div class="col-xs-2" id="butts">
-
+      {{#each tuts}}
+        <button type="button" id="{{this}}" class="center-block text-center {{#if mytut}}tut_btn my_tut{{else}}tut_btn{{/if}}" name="button">{{this}}</button><br>
+      {{/each}}
     </div>
     <div class="col-xs-2"></div>
-    {{#if userAdmin}}
-      <div class="col-xs-8 text-center center-block">
-        <div class="schedule col-xs-12 center-block text-center">
-          <div class="cells col-xs-2">Weekday</div>
-          <div class="cells col-xs-2">First Slot</div>
-          <div class="cells col-xs-2">Second Slot</div>
-          <div class="cells col-xs-2">Third Slot</div>
-          <div class="cells col-xs-2">Fourth Slot</div>
-          <div class="cells col-xs-2">Fifth Slot</div>
 
-          <div class="cells col-xs-2">Saturday</div>
-          <div class="cells col-xs-10">
-            <button type="button" class="free_btn" name="button">Free Day!</button>
-            <button type="button" class="normal_btn" name="button">Normal Day</button>
-          </div>
-
-          <div class="cells col-xs-2">Sunday</div>
-          <div class="cells col-xs-10">First Slot</div>
-
-          <div class="cells col-xs-2">Monday</div>
-          <div class="cells col-xs-10">First Slot</div>
-
-          <div class="cells col-xs-2">Tuesday</div>
-          <div class="cells col-xs-10">First Slot</div>
-
-          <div class="cells col-xs-2">Wednesday</div>
-          <div class="cells col-xs-10">First Slot</div>
-
-          <div class="cells col-xs-2">Thursday</div>
-          <div class="cells col-xs-10">First Slot</div>
-        </div>
-
+    {{#if currentTut}}
+    <div class="col-xs-8">
+      <table class="table">
+        <tr>
+          <th>Weekday</th>
+          <th>First Slot</th>
+          <th>Second Slot</th>
+          <th>Third Slot</th>
+          <th>Fourth Slot</th>
+          <th>Fifth Slot</th>
+        </tr>
+        {{#each weekdays}}
+          <tr>
+            <td>{{this}}</td>
+            <td>ba</td>
+            <td>ba</td>
+            <td>ba</td>
+            <td>ba</td>
+            <td>ba</td>
+          </tr>
+        {{/each}}
+      </table>
+    </div>
+    <div class="squad col-xs-2">
+      <p class="text-center" style="font-size:200%;"><b>The Squad</b></p>
+      <div class="fam">
+        <p class="text-center" style="font-size:140%;"><b>Nobody's here :(</b></p>
       </div>
-    {{else}}
-        {{#if currentTut}}
-        <div id="schedule" class="col-xs-8">
-
-        </div>
-        {{else}}
-        <div class="col-xs-8 placeholder_schedule text-center">
-          <p><b>Please choose a tutorial to view</b></p>
-        </div>
-        {{/if}}
+    </div>
+      {{else}}
+      <div class="col-xs-10">
+        <p class="choose text-center">Please choose a tutorial to view</p>
+      </div>
     {{/if}}
-      <div class="squad col-xs-2">
-        <p class="text-center" style="font-size:200%;"><b>The Squad</b></p>
-        <div class="fam">
-          <p class="text-center" style="font-size:140%;"><b>Nobody's here :(</b></p>
-        </div>
-      </div>
   </div>
 </template>

@@ -35,11 +35,6 @@
   transition-duration:0.2s;
   box-shadow:0px 0px 15px #E7DFDD;
 }
-.placeholder_schedule{
-  font-size:400%;
-  text-shadow: 0px 0px 20px white;
-  padding-top:13%;
-}
 .squad{
   border-radius:5px;
   background-color: rgba(0,0,0,0.2);
@@ -52,12 +47,20 @@
   background-color: rgba(0,0,0,0.2);
   border-radius:3px;
 }
-.schedule{
-  margin-top:4%;
-  border-radius:300px;
+.choose{
+  font-size:300%;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.6);
 }
-.cells{
-  border:2px solid white;
+.curr_tut{
+  background-color: #2ECC40;
+  color:white;
+  border:none;
+  border-radius:2000px;
+  font-size:200%;
+  width:70%;
+  height:10%;
+  transition-duration:0.2s;
+  box-shadow:0px 0px 15px #2ECC40;
 }
 #butts{
   position:absolute;
