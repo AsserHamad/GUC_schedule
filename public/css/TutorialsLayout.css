@@ -53,7 +53,7 @@
 }
 .curr_tut{
   background-color: #2ECC40;
-  color:rgba(255,255,255,1);
+  color:rgba(255,255,255,0.99);
   border:none;
   border-radius:2000px;
   font-size:200%;

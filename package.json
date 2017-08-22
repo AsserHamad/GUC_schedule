@@ -1,6 +1,7 @@
 {
   "name": "scheduler",
   "private": true,
+  "version": "4.7.2",
   "scripts": {
     "start": "meteor run"
   },
