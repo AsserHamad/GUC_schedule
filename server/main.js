@@ -35,6 +35,11 @@ Meteor.startup(() => {
       Meteor.users.update(Meteor.user(),{$set:{
         profile:profile
       }});
+    },
+    enroll(user,tutorial){
+      let profile = Meteor.users.findOne(user).profile;
+      profile.tutorial = tutorial;
+      Meteor.users.update(user,{$set:{profile:profile}})
     }
   })
 });

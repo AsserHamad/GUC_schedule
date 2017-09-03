@@ -17,7 +17,14 @@ Template.TutorialsLayout.helpers({
     if(Meteor.user())
     return this==Meteor.user().profile.tutorial;
   },
+  'enroll_btn':function(){
+    if(Meteor.user())
+    return Meteor.user().profile.tutorial!=Template.instance().current_tut.get();
+  },
   'weekdays':function(){
     return ['Satuday','Sunday','Monday','Tuesday','Wednesday','Thursday']
+  },
+  'squad':function(){
+    return Meteor.users.find({profile:{tutorial:Template.instance().current_tut.get()}}).fetch();
   }
 })
